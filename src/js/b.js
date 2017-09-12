@@ -3,5 +3,5 @@
  * All copyright belongs to rookie.
  */
 export default function (){
-    alert(123453453453112323);
+    console.log("asdasdasdasd```1");
 }

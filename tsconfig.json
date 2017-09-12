@@ -1,0 +1,38 @@
+{
+    "compilerOptions" : {
+        "alwaysStrict"  : true,
+        // 所有非相对模块导入都会被当做相对于baseUrl
+        "baseUrl" : "",
+        "charset" : "utf8",
+        //生成相应的.d.ts文件。
+        "declaration" : false,
+        //生成声明文件的输出路径。
+        "declarationDir" : "./declaration",
+        //组织代码方式,与node使用commonjs
+        "module" : "commonjs",
+        //编译成es5
+        "target": "es5",
+        //编译时是否生成对应的source map文件
+        "sourceMap" : false,
+        //编译生成的JavaScript文件是否移除注释。
+        "removeComments" : true,
+        //编译后的输出目录
+        "outDir" : "./dist",
+
+        "lib" : [
+            "es5",
+            "es6",
+            "es7",
+            "dom"
+        ]
+    },
+    "include" : [
+        "src/**/*"
+    ],
+    "exclude" : [
+        "node_modules"
+    ],
+    "files" : [
+        "./src/ts/a.ts"
+    ]
+}
