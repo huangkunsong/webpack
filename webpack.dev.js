@@ -27,6 +27,7 @@ module.exports = merge(commonConfig, {
                     "style-loader",
                     "css-loader",
                 ],
+                exclude : /node_modules/,
             },
         ],
     },
