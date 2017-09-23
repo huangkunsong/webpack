@@ -3,3 +3,8 @@
  */
 enum A {red,a}
 
+Promise.resolve(function(){
+    return "asdasd"
+}).then(function(r){
+    console.log(r);
+});

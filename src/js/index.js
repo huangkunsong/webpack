@@ -4,7 +4,11 @@
  */
 import "../css/index.css";
 import b from "./b";
-
+Promise.resolve(function (){
+    "dasdasd";
+}).then(function (r){
+    console.log(r);
+})
 function buildDiv (){
     b();
 }

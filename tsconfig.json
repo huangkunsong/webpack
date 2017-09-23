@@ -1,11 +1,14 @@
 {
     "compilerOptions" : {
+        //允许编译js文件
+        "allowJs" : false,
+        //使用严格模式
         "alwaysStrict"  : true,
         // 所有非相对模块导入都会被当做相对于baseUrl
         "baseUrl" : "",
         "charset" : "utf8",
         //生成相应的.d.ts文件。
-        "declaration" : false,
+        "declaration" : true,
         //生成声明文件的输出路径。
         "declarationDir" : "./declaration",
         //组织代码方式,与node使用commonjs
@@ -18,9 +21,10 @@
         "removeComments" : true,
         //编译后的输出目录
         "outDir" : "./dist",
-
+        //编译过程需要引入的文件列表
         "lib" : [
             "es5",
+            "es2015.promise",
             "es6",
             "es7",
             "dom"
@@ -33,6 +37,6 @@
         "node_modules"
     ],
     "files" : [
-        "./src/ts/a.ts"
+        "src/ts/a.ts"
     ]
 }
