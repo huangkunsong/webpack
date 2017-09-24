@@ -3,6 +3,7 @@
  * All copyright belongs to rookie.
  */
 import "../css/index.css";
+import style from "../css/a.less";
 import b from "./b";
 Promise.resolve(function (){
     "dasdasd";
@@ -11,6 +12,9 @@ Promise.resolve(function (){
 })
 function buildDiv (){
     b();
+    var aEle = document.createElement("a");
+    aEle.innerText = "asdasd";
+    document.body.appendChild(aEle);
 }
 if (process.env.NODE_ENV === "production"){
     console.log(123123);

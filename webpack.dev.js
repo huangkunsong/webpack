@@ -11,7 +11,7 @@ module.exports = merge(commonConfig, {
     devServer : {
         contentBase : "./dist_dev",
         //热模块
-        hot : true,
+        hot : false,
         //启动gzip压缩
         compress : true,
     },
@@ -22,10 +22,11 @@ module.exports = merge(commonConfig, {
     module : {
         rules : [
             {
-                test : /\.css$/,
+                test : /\.css|.less$/,
                 use : [
                     "style-loader",
                     "css-loader",
+                    "less-loader",
                 ],
                 exclude : /node_modules/,
             },

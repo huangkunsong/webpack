@@ -25,7 +25,7 @@ module.exports = {
     },
     entry : {
         index : path.resolve("src/js/index.js"),
-        a : path.resolve("src/ts/a.ts"),
+        
     },
     module : {
         //设置忽略解析的文件,支持正则
